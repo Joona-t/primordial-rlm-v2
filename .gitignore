@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.DS_Store
+rlm/
+data/
+*.egg-info/
+
+# Results at root level (use results/ dir)
+/experiment_results.json
+/vanilla_baseline_results.json
