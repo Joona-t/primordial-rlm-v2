@@ -4,6 +4,7 @@ __pycache__/
 rlm/
 data/
 *.egg-info/
+.venv/
 
 # Results at root level (use results/ dir)
 /experiment_results.json
