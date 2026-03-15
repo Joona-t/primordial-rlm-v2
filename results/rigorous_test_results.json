@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-03-15T11:30:14Z",
+  "duration_sec": 3.049,
+  "results": [
+    {
+      "scenario": "E_deep_recursion",
+      "result_response": "Combined: 5, 35, 24",
+      "stage_count": 7,
+      "max_depth": 4,
+      "all_reach_root": true,
+      "trace_verified": true,
+      "validation_errors": 0,
+      "vanilla_iteration_count": 4
+    },
+    {
+      "scenario": "F_compaction_semantic_check",
+      "passed": true,
+      "compaction_ref_count": 2,
+      "expected_ref_count": 2,
+      "refs": [
+        "artifact:rlm:run13033:iter:0:r1",
+        "artifact:rlm:run13033:iter:1:r1"
+      ],
+      "expected": [
+        "artifact:rlm:run13033:iter:0:r1",
+        "artifact:rlm:run13033:iter:1:r1"
+      ]
+    },
+    {
+      "scenario": "G_mutation_detection",
+      "base_error_count": 0,
+      "desync_error_count": 1,
+      "desync_detected": true,
+      "tamper_detected": true,
+      "tamper_hash_match": false,
+      "tamper_content_match": false
+    },
+    {
+      "scenario": "H_transition_probe",
+      "status": "spec_gap",
+      "finding": "Null ontology states exist, but legal transition rules are not yet encoded in the protocol or validator.",
+      "examples": [
+        [
+          "not_invoked",
+          "invalid"
+        ],
+        [
+          "deleted",
+          "pruned_recoverable"
+        ],
+        [
+          "unknown",
+          "resolved"
+        ]
+      ]
+    }
+  ]
+}
